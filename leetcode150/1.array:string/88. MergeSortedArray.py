@@ -10,7 +10,7 @@ and should be ignored. nums2 has a length of n.
 """
 
 class Solution:
-    def merge(nums1, m, nums2, n):
+    def merge(self, nums1, m, nums2, n):
         # last index nums1
         last = m + n - 1
         
@@ -29,4 +29,13 @@ class Solution:
             nums1[last] = nums2[n-1]
             n, last = n-1, last-1
         
-    
+
+# example
+nums1 = [1, 3, 5, 0, 0, 0]
+m = 3  
+nums2 = [2, 4, 6]
+n = 3 
+solution = Solution()
+solution.merge(nums1, m, nums2, n)
+
+print(nums1)
