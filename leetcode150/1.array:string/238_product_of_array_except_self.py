@@ -18,12 +18,12 @@ def productExceptSelf(nums):
 
     # calculate suffic product
     suffix_product = 1
-    for i in range(n-1, -1, -1):
+    for i in range(n - 1, -1, -1):
         output[i] = output[i] * suffix_product
         suffix_product = suffix_product * nums[i]
 
     return output
 
 
-nums = [1, 2, 3, 4]
-print(productExceptSelf(nums))
+num = [1, 2, 3, 4]
+print(productExceptSelf(num))
