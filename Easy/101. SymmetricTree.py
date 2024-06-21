@@ -1,6 +1,6 @@
 """
 101. Symmetric Tree
-Given the root of a binary tree, check whether it is a mirror of itself 
+Given the root of a binary tree, check whether it is a mirror of itself
 (i.e., symmetric around its center).
 """
 
@@ -10,6 +10,8 @@ Given the root of a binary tree, check whether it is a mirror of itself
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+
 class Solution:
     def isSymmetric(self, root):
         def isMirror(left, right):
@@ -17,7 +19,8 @@ class Solution:
                 return True
             if not left or not right:
                 return False
-            return left.val == right.val and isMirror(left.left, right.right) and isMirror(left.right, right.left)
+            return left.val == right.val and isMirror(
+                left.left, right.right) and isMirror(left.right, right.left)
 
         if not root:
             return True
