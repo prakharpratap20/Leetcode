@@ -34,4 +34,3 @@ class Solution:
         # return the number of ways to reach position
         # 0 after "steps" steps, modulo "mod"
         return dp[steps][0] % mod
-

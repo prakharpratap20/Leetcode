@@ -20,13 +20,13 @@ class Solution:
         # Loop to calculate counts for strings of length 2 to n.
         for _ in range(1, n):
             a_next = e
-            e_next = (a+i) % MOD
-            i_next = (a+e+o+u) % MOD
-            o_next = (i+u) % MOD
+            e_next = (a + i) % MOD
+            i_next = (a + e + o + u) % MOD
+            o_next = (i + u) % MOD
             u_next = a
 
             # Update the counts for the next iteration of the loop.
             a, e, i, o, u = a_next, e_next, i_next, o_next, u_next
 
         # Return the sum of counts for all vowels, modulo MOD.
-        return (a+e+i+o+u) % MOD
+        return (a + e + i + o + u) % MOD

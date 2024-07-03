@@ -18,9 +18,8 @@ class Solution:
         total = len(merged)
 
         if total % 2 == 1:  # odd
-            return float(merged[total//2])
+            return float(merged[total // 2])
         else:
-            middle1 = merged[total//2 - 1]
-            middle2 = merged[total//2]
+            middle1 = merged[total // 2 - 1]
+            middle2 = merged[total // 2]
             return (float(middle1) + float(middle2)) / 2.0
-
