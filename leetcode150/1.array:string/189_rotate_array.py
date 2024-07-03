@@ -11,10 +11,9 @@ def rotate(nums, k):
             start += 1
             end -= 1
 
-    reverse(0, len(nums)-1)
-    reverse(0, k-1)
-    reverse(k, len(nums)-1)
-
+    reverse(0, len(nums) - 1)
+    reverse(0, k - 1)
+    reverse(k, len(nums) - 1)
 
 
 num = [1, 2, 3, 4, 5, 6, 7, 8]
