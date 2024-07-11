@@ -8,16 +8,16 @@ If you cannot achieve any profit, return 0."""
 
 
 def max_profit(prices):
-    l, r = 0, 1
+    left, right = 0, 1
     max_pro = 0
 
-    while r < len(prices):
-        if prices[l] < prices[r]:
-            profit = prices[r] - prices[l]
+    while right < len(prices):
+        if prices[left] < prices[right]:
+            profit = prices[right] - prices[left]
             max_pro = max(max_pro, profit)
         else:
-            l = r
-        r += 1
+            left = right
+        right += 1
     return max_pro
 
 

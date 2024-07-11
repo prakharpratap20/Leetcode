@@ -10,6 +10,7 @@ Given the root of a binary tree, return the inorder traversal of its nodes' valu
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def inorderTraversal(self, root):
         result = []
@@ -24,5 +25,5 @@ class Solution:
             current = stack.pop()
             result.append(current.val)
             current = current.right
-        
-        return result 
+
+        return result

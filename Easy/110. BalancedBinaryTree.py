@@ -24,6 +24,6 @@ class Solution:
             if abs(left_height - right_height) > 1:
                 return False, 0
             return True, max(left_height, right_height) + 1
-        
+
         return check_balance_and_height(root)[0]
-        
+

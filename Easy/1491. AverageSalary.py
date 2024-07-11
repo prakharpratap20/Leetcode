@@ -5,6 +5,7 @@ Return the average salary of employees excluding the minimum and maximum salary.
 Answers within 10-5 of the actual answer will be accepted.
 """
 
+
 class Solution:
     def average_salary(self, salary):
         salary.sort()
