@@ -16,8 +16,13 @@ class TreeNode:
 
 class Solution:
     def maxDepth(self, root):
+        # If the 'root' is None, return
         if not root:
             return 0
+        # Recursively check the left subtree
         left_depth = self.maxDepth(root.left)
+        # Recursively check the right subtree
         right_depth = self.maxDepth(root.right)
+
+        # Return the maximum depth of the left and right subtrees
         return max(left_depth, right_depth) + 1

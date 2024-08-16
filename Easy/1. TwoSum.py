@@ -12,6 +12,7 @@ class Solution:
     def twoSum(self, nums, target):
         hash_table = {}
 
+       # Iterate through the 'nums' list
         for i, num in enumerate(nums):
             complement = target - num
 
